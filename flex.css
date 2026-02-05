@@ -1,28 +1,245 @@
-.flex-container {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: red;
-    flex-direction: row;
+.profile-pic {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.nav_bar {
+.intro {
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(255, 0, 200);
-    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    max-width: 1000px;
+    
+    background: linear-gradient(
+        to right,
+        #000000 0%,
+        #000000 83%,
+        transparent 60%,
+        transparent 100%
+    )
 }
 
-.flex-container2 {
+.intro-col {
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 255, 51);
-    flex-direction: row;
+    flex-direction: column;
+    color: white;
 }
-.flex-item {
-    border-style: solid;
-    border-width: 2px;
-    border-color: red;
+
+.intro-col h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+}
+
+.intro-col h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Helvetica, Arial, sans-serif;
+    font-style: italic;
+}
+
+.intro-col h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.personal-info-page {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 850px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+}
+
+.work-experience {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 50px;
+    max-width: 500px;
+}
+
+.work-experience h1, h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.work-experience ul, h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Helvetica, Arial, sans-serif;
+    line-height: 1.49;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+}
+
+.about-me h1 {  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-me h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.home-section {
+    background-color: #ffde59;
+    min-height: 100vh;
+}
+
+.projects-title {
+    width: 100%;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #ffde59;
+    background-color: #000000;
+    padding: 1px;
+}
+
+.projects-section {
+    background-color: white;
+    min-height: 60vh;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: #f1f1f1;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-card p{
+    margin: 0;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.project-card em{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.project-card ul, li{
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Helvetica, Arial, sans-serif;
+    padding-left: 0px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-top: 0px;
+    font-style: italic;
+}
+
+.nav-bar {
+    background: #000000;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 0.08em;
+        flex-direction: row;
+        margin-left: auto;
+}
+
+.logo {
+    color: white;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-footer {
+    background-color: #000000;
+    color:#f1f1f1;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.contact-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+    text-align: left;
+}
+
+.footer-content h2 {
+    margin-right: 400px;
+    margin-left: 50px;
+}
+
+.footer-content p {
+    justify-content: space-evenly;
 }

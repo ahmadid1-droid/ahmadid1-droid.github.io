@@ -2,92 +2,168 @@
 
 <html>
   <head>
-    <title>Sample Web Page</title>
+    <title>AN Madid's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="flex.css" />
 
   </head>
 
   <body>
-    
-    <nav>
-    <div class="nav_bar" >
-        <div class="flex-item" style="flex: 1">
-            <a href="/html/">HTML</a> |
+
+    <nav class="nav-bar">
+        <div class="nav-inner">
+            <div class ="logo">ALAN MADID</div>
+            <ul class="nav-links">
+                <li><a href="#home">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/css/">CSS</a>
-        </div> 
-    |   <div class="flex-item" style="flex: 1">
-            <a href="/js/">JavaScript</a> |
-        </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/python/">Python</a>
-        </div>
-    </div>
     </nav>
 
-    <div class="flex-container">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
+    <!-- ABOUT ME SECTIOn-->
+    <section id="home" class="home-section">
+        <div class="skills">
+            <div class="personal-info-page">
+                <div class="intro">
+                    <div>   <!-- Profile Picture-->
+                        <img src="Profile.jpg" class="profile-pic" alt="AN Madid's Profile" width="300" height="500">
+                    </div>
+                    <div class="intro-col">
+                        <h1 style="margin-bottom: 0;">
+                            Kamusta! Ako si
+                        </h1>
+                        <h1 style="margin-top: 0; margin-bottom: 0; color: yellow;">
+                            Alan Madid
+                        </h1>
+                        <h3 style="margin-top: 0; font-weight: normal; margin-top: 10px;">
+                            Frontend Software Engineer
+                        </h3>
+                        <h4 style="margin-top: 25; margin-bottom: 0;">
+                            Based on
+                        </h4>
+                        <h4 style="margin-top: 0;">
+                            <em>Los Baños, Laguna</em>
+                        </h4>
+                    </div>
+                </div>
+                <div class="about-me">
+                    <h1>
+                        About me
+                    </h1>
+                    <h4 style="margin-top: 0;">
+                        Frontend Software Engineer with experience building responsive, 
+                        user-focused web applications. Skilled in modern JavaScript frameworks 
+                        and translating UI/UX designs into clean, efficient, and accessible interfaces. 
+                        Passionate about performance optimization and continuous learning.
+                    </h4>
+                </div>
+            </div>
+            <div class="work-experience">
+                <h1 style="text-align: right; margin-bottom: 0;">
+                    Work Experience
+                </h1>
+                <h3 style="text-align: right; margin-top: 0; margin-bottom: 0;">
+                    LBIT Solutions - Los Baños, Laguna
+                </h3>
+                <h4 style="margin-top: 0; margin-bottom: 0;">
+                    <em>September 2020 - Present</em> 
+                </h4>
+                <ul style="margin-top: 0;">
+                        <li>Developed and maintained responsive web applications using HTML, CSS, JavaScript, and React</li>
+                        <li>Translated UI/UX designs from Figma into high-quality, reusable components</li>
+                        <li>Improved page load performance by 30% through code splitting, lazy loading, and asset optimization</li>
+                        <li>Collaborated with backend developers to integrate REST APIs and handle asynchronous data flows</li>
+                        <li>Ensured cross-browser compatibility and mobile responsiveness across modern devices</li>
+                        <li>Wrote clean, maintainable code following best practices and conducted peer code reviews</li>
+                        <li>Fixed UI bugs and enhanced existing features based on user feedback and analytics</li>
+                        <li>Used Git for version control and participated in agile ceremonies (stand-ups, sprint planning)</li>
+                </ul>
+            </div>
         </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
+    </section>
+
+    <!-- PROJECTS TITLE -->
+    <section class="projects-title">
+        <h1> MY PROJECTS </h1>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+        <div class="projects-container">
+            <div class="project-card">
+                <h3 style="text-align: center;">Portfolio Website</h3>
+                <p>
+                    <em>Description:</em> A fully responsive personal portfolio showcasing projects, skills, and professional experience.
+                </p>
+                <p>
+                    <em>Key Features:</em>
+                        <ul>
+                            <li>Smooth scrolling navigation</li>
+                            <li>Sticky header with logo and links</li>
+                            <li>Responsive design for mobile, tablet, desktop</li>
+                            <li>Animated project cards</li>
+                        </ul>
+                </p>
+            </div>
+            <div class="project-card">
+                <h3 style="text-align: center;">Weather Forecast App</h3>
+                <p>
+                    <em>Description:</em> A web app to display current weather and 7-day forecasts for any location.
+                </p>
+                <p>
+                    <em>Key Features:</em>
+                        <ul>
+                            <li>Search by city or use geolocation</li>
+                            <li>Dynamic background changes based on weather</li>
+                            <li>Responsive design for mobile and desktop</li>
+                            <li>Interactive charts for temperature trends</li>
+                        </ul>
+                </p>
+            </div>
+            <div class="project-card">
+                <h3 style="text-align: center;">Movie Database App</h3>
+                <p>
+                    <em>Description:</em> A web app to search and explore movies/series online using a public API.
+                </p>
+                <p>
+                    <em>Key Features:</em>
+                        <ul>
+                            <li>Search movies by title or genre</li>
+                            <li>Paginated results and detailed movie info</li>
+                            <li>Responsive grid layout</li>
+                            <li>Favorites feature with LocalStorage</li>
+                        </ul>
+                </p>
+            </div>
+            <div class="project-card">
+                <h3 style="text-align: center;">Interactive Dashboard</h3>
+                <p>
+                    <em>Description:</em> A real-time data visualization dashboard for monitoring KPIs and statistics.
+                </p>
+                <p>
+                    <em>Key Features:</em>
+                        <ul>
+                            <li>Dynamic charts and graphs with live updates</li>
+                            <li>Filterable data tables</li>
+                            <li>Dark/light mode toggle</li>
+                            <li>Responsive layout for all screen sizes</li>
+                        </ul>
+                </p>
+            </div>
         </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
+    </section>
+    <!-- CONTACT SECTION -->
+    <footer id="contact" class="contact-footer">
+        <div class="footer-content">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:ahmadid1@up.edu.ph">ahmadid1@up.edu.ph</a></p>
+            <p>Phone: (0928) 434 5497</p>
+            <p>Location: Los Baños, Laguna, Philippines</p>
+            <div class="social-link">
+                <a href="https://github.com/ahmadid1-droid" target="_blank">Github</a>
+            </div>
         </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
-    <div class="flex-container2">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
+    </footer>
   </body>
 
 </html>
